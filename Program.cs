@@ -1,10 +1,12 @@
 ﻿using System;
 
+
+
 namespace systemy_poz_test
 {
-    public class Converter
+    class Program
     {
-        public string solve(int number, int systemIn, int systemOut)
+        static string solve(int number, int systemIn, int systemOut)
         {
             string numberToReturn = "";
             int toDecimal = 0;
@@ -49,14 +51,10 @@ namespace systemy_poz_test
             }
             return numberToReturn;
         }
-    }
 
-    class Program
-    {
         static void Main(string[] args)
         {
-            Converter cal = new Converter();
-            string xd = cal.solve(156, 10, 16);
+            string xd = solve(156, 10, 16);
             Console.WriteLine(xd);
         }
     }
